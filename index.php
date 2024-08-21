@@ -59,7 +59,6 @@ th, td {
             $result =  mysqli_query($con, $query);
             $num = 1;
             while ($row = mysqli_fetch_assoc($result)) {  ?>
-                <!-- while ($row = mysqli_fetch_row($result)) {     -->
                 <tr>
                     <td><?php echo $num; ?></td>
                     <td><?php echo $row['name']; ?></td>
