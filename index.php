@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<style></style>
 <title>Title</title>
 <style>
     table, th, td {
@@ -30,18 +31,20 @@ th, td {
     <h1>Learn CRUD</h1></center>
         <h2>Create Your Account</h2>
             <form action="createData.php" method="POST">
+                <div class="form-outline" data-mdb-input-init>
                 <label for="name">Username:
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="name" class="form-control" required>
                     </label>
                         <br>
                 <label for="email">Email:
-                    <input type="email" name="email" class="form-control">
+                    <input type="email" name="email" class="form-control" required>
                     </label>
                     <br>
                 <input type="submit" value="Submit">
+                </div>
             </form>
 
-           <h2>Users Data</h2> 
+            <h2>Users Data</h2> 
             <table border="1">
             <thead>
             <th>S.No</th>
@@ -74,8 +77,8 @@ th, td {
 
             </tbody>                    
             </table>
-             
-
+            
+       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
