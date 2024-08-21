@@ -1,3 +1,6 @@
+<?php
+    include 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +14,24 @@
 <title>Title</title>
 </head>
 <body>
-    <h1>Learn CRUD</h1>
+    <center>
+    <h1>Learn CRUD</h1></center>
         <h2>Create Your Account</h2>
-            <form action="">
+            <form action="createData.php" method="POST">
                 <label for="name">Username:
-                    <input type="text" name="name">
+                    <input type="text" name="name" class="form-control">
                     </label>
                         <br>
                 <label for="email">Email:
-                    <input type="text" name="email">
+                    <input type="email" name="email" class="form-control">
                     </label>
                     <br>
                 <input type="submit" value="Submit">
             </form>
+
+           <h2>Users Data</h2> 
+         
+             
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
