@@ -6,7 +6,7 @@ $username = $_POST['name'];
 $useremail = $_POST['email'];
 
 
-$query = ("INSERT INTO tbl_user (`name`,`email`) values ('$username','$useremail')");
+$query = "INSERT INTO tbl_user (`name`,`email`) values ('$username','$useremail')";
 
 $result = mysqli_query($con, $query);
 

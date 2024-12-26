@@ -15,17 +15,23 @@
     <?php
         echo "Hello World from PHP";
 
-        $number1 = 10;
-        $number2 = 21;
-            echo "<br>";
+        // $number1 = 10;
+        // $number2 = 21;
+        //     echo "<br>";
         // echo $number1 + $number2;
-         echo ++$number1;
+        // echo ++$number1;
+        // echo "<br>";
 
-        $val= $number1 && $number2 > 8;
-    echo $val
+        $age = 60;
+        echo "<br>";
+        if($age >= 60){
+            echo "You are not eligible to Vote";
+        }else if($age >= 18){
+            echo "You are eligible to Vote";
+        }else{
+            echo "You are not eligible to Vote";
+        }
     ?>
-
-
     <br>
     <button class="btn btn-success">Click me</button>
 
