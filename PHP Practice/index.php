@@ -55,24 +55,25 @@
     //     $val++;
     //  }
     echo "<br>";
-
+    // print-r returns an indexed array
     print_r($languages);
 
-    foreach($languages as $value){
-        echo "<br> The value is $value";
-    }
+    // foreach($languages as $value){
+    //     echo "<br> The value is $value";
+    // }
     // String Functions in PHP
     echo "<br>";
+    // var dump returns an information about string 
     echo var_dump($name);
-    echo "<br>";
-    echo strpos($name, 'm');
-    echo "<br>";
-    echo gettype($PI);
-    echo "<br>";
-    echo gettype($PI);
-    echo "<br>";
-    echo gettype($PI);
-    ?>
+    // echo "<br>";
+    // echo strpos($name, 'm');
+    // echo "<br>";
+    // echo gettype($PI);
+    // echo "<br>";
+    // echo gettype($PI);
+    // echo "<br>";
+    // echo gettype($PI);
+    // ?>
 
     
     <br>
