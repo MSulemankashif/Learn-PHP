@@ -69,12 +69,17 @@
     echo "<br>";
     echo gettype($PI);
     echo "<br>";
-    echo gettype($PI);
+    echo strlen($PI);
     echo "<br>";
     echo gettype($PI);
+    echo "<br>";
+
+    $str = "This is a String";
+
+    $lenn = strlen($str);
+    echo "The length of the string is $lenn <br>";
     ?>
 
-    
     <br>
     <button class="btn btn-success">Click me</button>
 
