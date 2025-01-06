@@ -13,8 +13,8 @@
 <body>
     <h1>Hello World from PHP</h1>
     <?php
-        
-    ?>
+    
+  ?>
 
     <br>
     <button class="btn btn-success">Click me</button>
