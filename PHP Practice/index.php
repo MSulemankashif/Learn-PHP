@@ -13,11 +13,12 @@
 <body>
     <h1>Hello World from PHP</h1>
     <?php
-    
-  ?>
+        
+
+    ?>
 
     <br>
-    <button class="btn btn-success">Click me</button>
+    <!-- <button class="btn btn-success">Click me</button> -->
 
     <script>
         let body =document.querySelector('body');
@@ -27,7 +28,7 @@
             body.style.color = 'white';
 
         });
-        </script>
+    </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
