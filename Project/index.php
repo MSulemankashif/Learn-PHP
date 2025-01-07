@@ -14,11 +14,11 @@ if(!$con){
 
 $name = $_POST['name'];
 $age = $_POST['age'];
-$gender = $_['gen'];
+$gender = $_POST['gen'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $desc= $_POST['desc'];
 
-$sql = "INSERT into `members` ('name','age','gender','email','phone','other','dt') VALUES ($name, $age, $gender, $email, $phone, $desc, current_timestamp());";
+$sql = "INSERT into `members` (`name`,`age`,`gender`,`email`,`phone`,`other`,`dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
 
 echo $sql;
