@@ -11,24 +11,15 @@
 <title>Learning PHP</title>
 </head>
 <body>
-    <h1>Hello World from PHP</h1>
     <?php
-        
+        // print "Hello World"; 
+    $a = "Suleman ";
+    $b = "Kashif";
 
+    echo $a . $b;
+
+    $c = 10;
     ?>
-
-    <br>
-    <!-- <button class="btn btn-success">Click me</button> -->
-
-    <script>
-        let body =document.querySelector('body');
-        let btn =document.querySelector('button');
-        btn.addEventListener('click', function(){
-            body.style.backgroundColor = 'black';
-            body.style.color = 'white';
-
-        });
-    </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
