@@ -12,13 +12,21 @@
 </head>
 <body>
     <?php
-        // print "Hello World"; 
-    $a = "Suleman ";
-    $b = "Kashif";
+        //Php Object
+        class Car {
+            public $color; //Property
+            public $model;  //Property
+            public function __construct($color,$model){
+                $this->color = $color;
+                $this->model = $model;
+            }
+            public function message(){
+                return "My car is a " . $this->color . "" .$this->model . "!"; 
+            }
+        }
+        $myCar = new Car("black","Volvo");
+        print_r($myCar);
 
-    echo $a . $b;
-
-    $c = 10;
     ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
