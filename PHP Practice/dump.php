@@ -64,4 +64,19 @@ echo "Hello World from PHP";
 
     $lenn = strlen($str);
     echo "The length of the string is $lenn <br>";
+
+    //OOP in PHP
+    class Car {
+        public $color; //Property
+        public $model;  //Property
+        public function __construct($color,$model){
+            $this->color = $color;
+            $this->model = $model;
+        }
+        public function message(){
+            return "My car is a " . $this->color . "" .$this->model . "!"; 
+        }
+    }
+    $myCar = new Car("black","Volvo");
+    print_r($myCar);
     ?>

@@ -13,20 +13,30 @@
 <body>
     <?php
         //Php Object
-        class Car {
-            public $color; //Property
-            public $model;  //Property
-            public function __construct($color,$model){
-                $this->color = $color;
-                $this->model = $model;
-            }
-            public function message(){
-                return "My car is a " . $this->color . "" .$this->model . "!"; 
-            }
-        }
-        $myCar = new Car("black","Volvo");
-        print_r($myCar);
+        class Animal{
+            public $name; //Property
+            public $eating; //Property
 
+            function setName($name){
+                $this->name = $name;
+            }
+            function getName(){
+                return $this->name;
+            }
+            function setEating($eating){
+                $this->eating = $eating;
+            }
+            function getEating(){
+                return $this->eating;
+            }
+        };
+        $Tiger = new Animal();
+
+        $Tiger->setName("Tiger ");
+        $Tiger->setEating("Meat");
+
+        echo $Tiger->getName()."<br>";
+        echo $Tiger->getEating()."<br>";
     ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
