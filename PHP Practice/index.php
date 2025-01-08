@@ -13,25 +13,7 @@
 <body>
     <?php
         //Php Object
-    class Animal {
-        public $name; //Property
-        public $eating; //Property
-
-        public function __construct($name, $eating){
-            $this->name = $name;
-            $this->eating = $eating;
-        }
-
-        public function result(){
-            return "The name of the animal is $this->name and it eats $this->eating";
-        }
-    }
-    $Tiger = new Animal("Tiger", "Meat");
-    $goat = new Animal( "Goat", "Grass");
-    
-        print_r($Tiger);
-        echo "<br>";
-        print_r($goat);
+    echo (pi());
     ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
