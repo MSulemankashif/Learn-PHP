@@ -13,30 +13,25 @@
 <body>
     <?php
         //Php Object
-        class Animal{
-            public $name; //Property
-            public $eating; //Property
+    class Animal {
+        public $name; //Property
+        public $eating; //Property
 
-            function setName($name){
-                $this->name = $name;
-            }
-            function getName(){
-                return $this->name;
-            }
-            function setEating($eating){
-                $this->eating = $eating;
-            }
-            function getEating(){
-                return $this->eating;
-            }
-        };
-        $Tiger = new Animal();
+        public function __construct($name, $eating){
+            $this->name = $name;
+            $this->eating = $eating;
+        }
 
-        $Tiger->setName("Tiger ");
-        $Tiger->setEating("Meat");
-
-        echo $Tiger->getName()."<br>";
-        echo $Tiger->getEating()."<br>";
+        public function result(){
+            return "The name of the animal is $this->name and it eats $this->eating";
+        }
+    }
+    $Tiger = new Animal("Tiger", "Meat");
+    $goat = new Animal( "Goat", "Grass");
+    
+        print_r($Tiger);
+        echo "<br>";
+        print_r($goat);
     ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

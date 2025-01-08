@@ -69,7 +69,7 @@ echo "Hello World from PHP";
     class Car {
         public $color; //Property
         public $model;  //Property
-        public function __construct($color,$model){
+        public function __construct($color,$model){ //Construct is a special function. It is automaticaly executed when an object of the class is created
             $this->color = $color;
             $this->model = $model;
         }
