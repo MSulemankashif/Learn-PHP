@@ -14,6 +14,7 @@
     <?php
         //Php Object
     echo (pi());
+    echo "The Quick brown fox jumps over the lazy dog";
     ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
