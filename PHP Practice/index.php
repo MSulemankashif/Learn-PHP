@@ -18,6 +18,11 @@
 //         break;
 // };
 
-for($i = 0;$i <=10;$i++){
-    echo "The Value is $i". "<br>";
-};
+$y =20;
+echo 'Before Execution ';
+if($y == 20){
+    goto end;
+}
+echo "Hello world";
+
+end: echo"<br> after execution";
