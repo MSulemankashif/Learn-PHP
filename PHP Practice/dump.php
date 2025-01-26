@@ -145,3 +145,14 @@ function sayHello(){
 
 sayHello();
 nested();
+
+
+
+
+// Variable Functions
+function test(){
+    echo "This is a test function";
+};
+
+$testFunc = "test"; 
+$testFunc();
