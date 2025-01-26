@@ -134,3 +134,14 @@ function printName($name,$color){
 };
 
 printName("Suleman","green");
+
+function sayHello(){
+    echo "Calling frist function <br>";
+
+    function nested(){
+        echo "This is second function";
+    };
+};
+
+sayHello();
+nested();
