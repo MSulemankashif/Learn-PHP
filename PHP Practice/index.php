@@ -1,5 +1,5 @@
 <?php 
-
+/*
 $students = [
     [1,"Suleman","Karachi"],
     [2,"Ali","Lahore"],
@@ -30,4 +30,5 @@ echo "<table border=1>";
         echo "</tr>";
     };
 echo "</table>";
-
+*/
+echo "Hello World";
