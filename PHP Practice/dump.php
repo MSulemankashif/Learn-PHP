@@ -156,3 +156,10 @@ function test(){
 
 $testFunc = "test"; 
 $testFunc();
+
+$users = array("Suleman","Usman","Ali","Ahmed","Kamran","Noman","Talha","Bilal","Zain","Ahsan");
+// $other=["Suleman","Usman","Ali","Ahmed","Kamran","Noman","Talha","Bilal","Zain","Ahsan"];
+
+for($i=0; $i<count($users);$i++){
+    echo $users[$i]."<br>";
+};
