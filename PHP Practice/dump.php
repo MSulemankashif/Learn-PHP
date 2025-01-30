@@ -157,9 +157,68 @@ function test(){
 $testFunc = "test"; 
 $testFunc();
 
+//Arrays
+
 $users = array("Suleman","Usman","Ali","Ahmed","Kamran","Noman","Talha","Bilal","Zain","Ahsan");
 // $other=["Suleman","Usman","Ali","Ahmed","Kamran","Noman","Talha","Bilal","Zain","Ahsan"];
 
 for($i=0; $i<count($users);$i++){
     echo $users[$i]."<br>";
+};
+
+
+
+$users = array("Suleman","Usman","Ali","Ahmed","Kamran","Noman","Talha","Bilal","Zain","Ahsan");
+
+foreach($users as $user){
+    
+    if($user == "Ahmed"){
+        // break;
+        continue;
+    }
+    echo $user ."<br>";
+}
+
+//Associative Array
+
+$students = array(
+    "name"=>"Suleman",
+     "age"=>19,
+     "email"=>"suleman@gmail.com",
+     "city"=>"Karachi"
+    );
+
+// foreach($students as $key => $value){
+//     echo "<br> The $key is $value";
+// }
+
+foreach($students as $key => $value):
+    echo "The Key is $key and the value is $value . <br>";
+endforeach;
+
+
+
+
+//Multidimentional Arrays
+$users =[
+    [1,"Suleman","karachi"],
+    [2,"Usman","Lahore"],
+    [3,"Ali","Islamabad"],
+    [4,"Ahmed","Quetta"],
+    [5,"Kamran","Peshawar"],
+    [6,"Noman","Multan"],
+    [7,"Talha","Faisalabad"],
+    [8,"Bilal","Sialkot"],
+    [9,"Zain","Gujranwala"],
+    [10,"Ahsan","Rawalpindi"]
+];
+// echo "<pre>";
+// print_r($users);
+
+for($i=0; $i<count($users);$i++){
+    // print_r($users[$i]);
+    // echo "<br>";
+    for($j=0; $j<count($users[$i]);$j++){
+        echo $users[$i] [$j]. "<br>";
+    };
 };
