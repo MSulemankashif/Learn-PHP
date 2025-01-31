@@ -268,3 +268,21 @@ echo "<table border=1>";
         echo "</tr>";
     };
 echo "</table>";
+
+
+
+
+
+$users =[
+    ["Name"=>"Suleman","Age"=>19,"city"=>"karachi"],
+    ["Name"=> "Ali","Age"=> 20,"city"=> "Lahore"],
+    ["Name"=> "Ahmed","Age"=> 21,"city"=> "Karachi"]
+];
+
+for ($i = 0; $i < count($users); $i++){
+    // echo "<pre>";
+    // print_r($users[$i]);
+    foreach($users[$i] as $key=> $value){
+        echo "$key  is $value" . "<br>";
+    };
+};
