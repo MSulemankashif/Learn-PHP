@@ -7,21 +7,18 @@ $users =[
 ];
 
 echo "<table border=1>";
-echo "<tr> 
-    <td  style='font-weight:bold';> Key </td>
-    <td style='font-weight:bold';> Value </td>
-    <td style='font-weight:bold';> Key </td>
-    <td style='font-weight:bold';> Value </td>
-    <td style='font-weight:bold';> Key </td>
-    <td style='font-weight:bold';> Value </td>
-    </tr>";
-
+echo "<tr>
+    <td style='font-weight:bold';>Name</td>
+    <td style='font-weight:bold';>Age</td>
+    <td style='font-weight:bold';>City</td>
+</tr>";
 for ($i = 0; $i < count($users); $i++){
     echo "<tr>";
     foreach($users[$i] as $key=> $value){
-        echo "<td style='width:40px';>";
+        /* echo "<td style='width:40px';>";
             echo "$key";
-        echo "</td>";
+        echo "</td>"; */
+         
         echo "<td style='width:60px';>";
             echo " $value";
         echo "</td>";
