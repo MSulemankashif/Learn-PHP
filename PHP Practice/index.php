@@ -1,28 +1,20 @@
 <?php
 
-$users =[
-    ["Name"=>"Suleman","Age"=>19,"city"=>"karachi"],
-    ["Name"=> "Ali","Age"=> 20,"city"=> "Lahore"],
-    ["Name"=> "Ahmed","Age"=> 21,"city"=> "Karachi"]
-];
+// remove and Add element is Array
 
-echo "<table border=1>";
-echo "<tr>
-    <td style='font-weight:bold';>Name</td>
-    <td style='font-weight:bold';>Age</td>
-    <td style='font-weight:bold';>City</td>
-</tr>";
-for ($i = 0; $i < count($users); $i++){
-    echo "<tr>";
-    foreach($users[$i] as $key=> $value){
-        /* echo "<td style='width:40px';>";
-            echo "$key";
-        echo "</td>"; */
-         
-        echo "<td style='width:60px';>";
-            echo " $value";
-        echo "</td>";
-    };
-    echo "</tr>";
-};
-echo "</table>";
+$users = array("Usman","Ali","Ahmed","Suleman","Sameer");
+
+// To add Element in Array
+// array_push($users,1,"Ahmed","Karachi");
+
+// To remove Element in Array
+    //First Method
+    array_pop($users);
+    // Second Method
+    array_splice($users,1,1);
+
+
+
+
+echo "<pre>";
+print_r($users);
