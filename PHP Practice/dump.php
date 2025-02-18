@@ -316,3 +316,39 @@ for ($i = 0; $i < count($users); $i++){
     echo "</tr>";
 };
 echo "</table>";
+
+//Switch Statement 
+$color = "blue";
+
+switch($color){
+    case "red":
+        echo "Your Favorite color is Red";
+            break;
+    case "blue":
+        echo "Your Favorite color is Blue";
+            break;
+    case "green":    
+        echo "Your Favorite color is Green";
+            break;
+    default:
+        echo "You don't like any colours";
+}
+
+//Type Casting
+$a = 10;
+
+$b = (boolean) $a;
+var_dump($b);
+
+//Local & Global Variables
+
+$name = "Suleman";
+function printName2(){
+    $name = "Ali";
+    echo $name;
+    echo "<br>";
+    global $name;
+    echo $name;
+};
+
+printName2();
