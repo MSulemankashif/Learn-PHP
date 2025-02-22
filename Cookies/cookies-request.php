@@ -15,14 +15,28 @@
     </div>
 
     <?php 
-    if(isset(($_REQUEST["user"]))){
+    // if(isset(($_REQUEST["user"]))){
+    //     if($_REQUEST['button']=="set"){
+    //         $val = $_REQUEST['user'];
+    //         // echo "Value set: ".$val;
+    //         setcookie("username", $val, time()+ (86400));
+    //         echo "Cookie set successfully";
+    //     }else if(empty($_REQUEST['user'])){
+    //         echo "There is some error";
+    //     }
+    // }
+
+    if(isset($_REQUEST['user'])){
         if($_REQUEST['button']=="set"){
             $val = $_REQUEST['user'];
-            // echo "Value set: ".$val;
-            setcookie("username", $val, time()+ (86400));
-            echo "Cookie set successfully";
-        }else if(empty($_REQUEST['user'])){
-            echo "There is some error";
+            if($val){
+                setcookie("Username", $val, time() + (86400));
+                echo "Cookie set succesfully"; 
+            }else{
+                echo "<p style='color:red';>Please enter a value</p>";
+            }
+        }else{
+            echo "Please set a value in button";
         }
     }
 
