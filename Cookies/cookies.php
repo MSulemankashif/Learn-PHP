@@ -8,6 +8,6 @@ setcookie("name", $name, time() + (86400 ));
 if(isset($_COOKIE['name'])){
     echo "Cookie is set";
 }else{
-    echo "Cookie is not set";
+    echo "Cookie not set";
 }
 
