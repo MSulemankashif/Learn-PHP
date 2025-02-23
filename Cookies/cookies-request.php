@@ -37,8 +37,8 @@
             }
         }else{
             echo "Please set a value in button";
-        }
-    }
+        };
+    };
 
     ?>
 </body>
