@@ -38,14 +38,23 @@
     //     echo "Please enter file name and content";
     // }
 
+    // if(isset($_REQUEST['filename'])){
+    //     $filename = 'files/'. $_REQUEST['filename'];
+    //     $content = $_REQUEST['content'];
+    //     $file = fopen($filename, "w") or die("unable to open file");
+    //     fwrite($file, $content);
+    //     fclose($file);
+    //     echo "File created successfully";
+    // };
+
     if(isset($_REQUEST['filename'])){
-        $filename = 'files/'. $_REQUEST['filename'];
+        $file = 'files/' . $_REQUEST['filename'];
         $content = $_REQUEST['content'];
-        $file = fopen($filename, "w") or die("unable to open file");
-        fwrite($file, $content);
-        fclose($file);
+        $myfile = fopen($file, "w") or die ("Unable to create file");
+        fwrite($myfile, $content);
+        fclose($myfile);
         echo "File created successfully";
-    };
+    }
     ?>
 </body>
 </html>
