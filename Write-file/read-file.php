@@ -37,7 +37,6 @@ if(isset($_POST['file'])){
     $myFile = fopen($file, "r" ) or die ("Unable to read file");
     echo fread($myFile, filesize($file));
     fclose($myFile);
-
 }
 
 ?>
