@@ -1,5 +1,4 @@
 <?php
-
 // $user = ["name"=>"Suleman","age"=>20,"email"=>"suleman@gmail.com"];
 // echo json_encode($user); // Prints data in Object format
 
