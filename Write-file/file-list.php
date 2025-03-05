@@ -11,12 +11,20 @@
 //     echo "<br>";
 // };
 
+// $path = 'files';
+// $items = scandir($path);
+// $items = array_diff($items, array('.', ".."));
+
+// echo "<h1>Please click on a file to read</h1>";
+// foreach($items as $item){
+//     // echo $item . "<br>";
+//     echo "<a href='./files/'$item>$item</a>" . "<br>";
+// };
+
 $path = 'files';
 $items = scandir($path);
-$items = array_diff($items, array('.', ".."));
+$items = array_diff($items, array(".", ".."));
 
-echo "<h1>Please click on a file to read</h1>";
 foreach($items as $item){
-    // echo $item . "<br>";
-    echo "<a href='./files/'$item>$item</a>" . "<br>";
-}
+    echo "<a href=./files/$item>$item</a> <br>";
+};

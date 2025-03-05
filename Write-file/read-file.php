@@ -32,11 +32,18 @@
 // echo fread($myFile, filesize($file));
 // fclose($myFile);
 
+// if(isset($_POST['file'])){
+//     $file = 'files/'. $_POST['file'] . '.txt';
+//     $myFile = fopen($file, "r" ) or die ("Unable to read file");
+//     echo fread($myFile, filesize($file));
+//     fclose($myFile);
+// }
+
 if(isset($_POST['file'])){
-    $file = 'files/'. $_POST['file'] . '.txt';
-    $myFile = fopen($file, "r" ) or die ("Unable to read file");
-    echo fread($myFile, filesize($file));
-    fclose($myFile);
+    $file = "files/" . $_POST['file'];
+    $myfile = fopen($file, 'r') or die ("Unable to read file");
+    echo fread($myfile, filesize($file));
+    fclose($myfile);
 }
 
 ?>
