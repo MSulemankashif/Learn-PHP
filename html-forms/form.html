@@ -16,6 +16,12 @@
             margin-bottom: 20px;
             margin-top: 8px;
         }
+        .container{
+            background-color: burlywood;
+        }
+        button{
+            margin: 8px !important;
+        }
 
     </style>
 </head>
@@ -41,19 +47,21 @@
             <br>
             <input type="checkbox" name="skills[]" value="c#"><span>C#</span>
             <br>
-            <label for="">Select City</label>
+            <label for="" class="h6">Select City</label>
             <br>
-            <select name="" id="">
+            <select name="" id="" class="form-control">
+                <option>Select a City</option>
                 <option value="karachi">Karachi</option>
                 <option value="lahore">Lahore</option>
                 <option value="multan">Multan</option>
                 <option value="islamabad">Islamabad</option>
             </select>
+            <label for="" class="h6">Enter your Bio Here</label>
             <br>
-
-
+            <textarea name="bio" rows="5" cols="30" placeholder="(Optional)"></textarea>
+            <br>
               <button class="btn btn-success">Submit</button>
         </form>
-  </div>
+    </div>
 </body>
 </html>
