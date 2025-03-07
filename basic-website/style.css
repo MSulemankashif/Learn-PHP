@@ -1,0 +1,23 @@
+header, footer{
+    margin: 10px;
+    padding: 8px;
+    background-color: cadetblue;
+}
+header{
+    display: flex;
+}
+header a, footer a {
+    color: white;
+}
+p{
+    text-align: justify;
+}
+header li{
+    display: inline;
+    margin: 10px;
+}
+header ul{
+    margin: 0, 0, 0 !important;
+    margin-top: 10px; 
+    padding: 0, 0, 0 !important;
+}
