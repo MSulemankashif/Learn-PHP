@@ -14,7 +14,7 @@
         include_once "header.php";
     ?>
     <main class="hero container-fluid">
-        <h1>This is Index Page</h1>
+        <h1>This is About Page</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio tempore modi excepturi vitae amet sint. Ducimus ut iusto faciliis omnis fuga, autem ex obcaecati harum repellendus est velit explicabo! Commodi quam deserunt expedita vero praesentium. Delectus nesciunt sed reprehenderit nisi voluptatem blanditiis ullam facere ex accusamus qui? Aperiam atque doloremque dolorem temporibus modi similique necessitatibus vel magnam facere quam? Et nesciunt, hic aperiam cum dolorem optio odit necessitatibus quis mollitia? Itaque vel iure similique? Molestiae aperiam, laboriosam distinctio dolorem ex, inventore deserunt voluptatibus quis laborum quia libero maxime! Aspernatur harum iure quisquam ipsum explicabo iusto reiciendis ipsam est consequuntur!</p>
         <img src="https://static.vecteezy.com/system/resources/previews/049/855/259/non_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="">
     </main>
