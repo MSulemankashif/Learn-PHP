@@ -23,16 +23,28 @@
 </body>
 </html>
 <?php
+    // session_start();
+    // if(isset($_POST['button'])){
+    //     if($_POST['button'] == 'set'){
+    //         $val = $_POST["name"];
+    //         $_SESSION['name'] = $val;
+    //         // echo $_SESSION['name'];
+    //     }else if($_POST['button'] == 'get'){
+    //         echo $_SESSION['name'];
+
+    //     }else if($_POST['button'] == 'delete'){
+    //         session_destroy();
+    //     };
+    // };
+
     session_start();
     if(isset($_POST['button'])){
-        if($_POST['button'] == 'set'){
-            $val = $_POST["name"];
+        if($_POST['button'] == "set"){
+            $val = $_POST['name'];
             $_SESSION['name'] = $val;
-            // echo $_SESSION['name'];
         }else if($_POST['button'] == 'get'){
-            echo $_SESSION['name'];
-
-        }else if($_POST['button'] == 'delete'){
+            echo $_SESSION["name"];
+        }else if ($_POST["button"] == "delete"){
             session_destroy();
         };
     };
