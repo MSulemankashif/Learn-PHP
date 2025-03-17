@@ -4,8 +4,8 @@
 if($_FILES['file']['name']){
     $path = './uploads/'. $_FILES['file']['name'];
     if(move_uploaded_file($_FILES['file']['tmp_name'], $path)){
-        echo "File Uploaded Succesfully";
+        echo "File Uploaded Successfully";
     }else{
-        echo 'There is an error';
-    }
+        die('File not uploaded');
+    };
 }
