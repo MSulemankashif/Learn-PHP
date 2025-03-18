@@ -1,13 +1,18 @@
 <?php
-$host="localhost";
-$username="root";
-$password='';
-
-try{
-    $conn = new PDO("mysql:host=$host;dbname=college", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected Successfully";
-    
-}catch(PDOException $e){
-    echo "Connection Failed: ".$e->getMessage();
+include_once 'config.php';
+if(isset($_POST["submit"])){
+    $name = $_POST['name'];
+    $course = $_POST['course'];
+    $batch = $_POST['batch'];
+    $city = $_POST['city'];
+    $year = $_POST['year'];
+    try{
+        $sql = "INSERT INTO students (Name, Course, Batch, City, `Year`) VALUES ('$name','$course','$batch','$city','$year')";
+        $conn->exec($sql);
+        echo "Data Inserted Successfully";
+    }catch(PdoException $e){
+        echo "Data Insertion Failed: " . $e->getMessage();
+    }
+}else{
+    echo "Data Not Inserted";
 }
