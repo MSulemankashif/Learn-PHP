@@ -27,23 +27,17 @@
 
 
 <?php
-// $file = 'files/index.txt';
-// $myFile = fopen($file, "r" ) or die ("Unable to read file");
-// echo fread($myFile, filesize($file));
-// fclose($myFile);
-
 // if(isset($_POST['file'])){
-//     $file = 'files/'. $_POST['file'] . '.txt';
-//     $myFile = fopen($file, "r" ) or die ("Unable to read file");
-//     echo fread($myFile, filesize($file));
-//     fclose($myFile);
+//     $file = "files/" . $_POST['file'];
+//     $myfile = fopen($file, 'r') or die ("Unable to read file");
+//     echo fread($myfile, filesize($file));
+//     fclose($myfile);
 // }
 
 if(isset($_POST['file'])){
-    $file = "files/" . $_POST['file'];
-    $myfile = fopen($file, 'r') or die ("Unable to read file");
-    echo fread($myfile, filesize($file));
-    fclose($myfile);
+    $path = './files/'. $_POST['file'];
+    $file = fopen($path, "r") or die("Unable to read file");
+    echo fread($file, filesize($path));
+    fclose(($file));
 }
-
 ?>
