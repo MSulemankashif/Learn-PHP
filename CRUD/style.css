@@ -30,3 +30,9 @@ input[type="text"]{
 select{
     width: 40% !important;
 }
+table{
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
