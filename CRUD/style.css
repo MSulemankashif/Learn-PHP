@@ -1,0 +1,32 @@
+body{
+    background-color: cadetblue;
+}
+header{
+    display: flex ;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: burlywood;
+    border-radius: 8px;
+}
+header li{
+    display: inline;
+    margin: 10px;
+}
+header ul{
+    margin: 0, 0, 0 !important;
+    margin-top: 10px; 
+    padding: 0, 0, 0 !important;
+}
+
+.container{
+    margin:40px;
+}
+.btn{
+    width: 190px !important;
+}
+input[type="text"]{
+    width: 40% !important;
+}
+select{
+    width: 40% !important;
+}

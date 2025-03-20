@@ -1,16 +1,9 @@
 <?php
-
 $host = "localhost";
+$dbname = "college";
 $username = "root";
 $password = "";
-$database = "db_users";
 
-$con = new mysqli($host, $username, $password, $database);
+$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// if ($con)
-// {
-//     echo "Database Connected";
-// } else 
-//  {
-//         echo "Database not Connected";
-//     }

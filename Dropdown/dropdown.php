@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+// include 'index.php';
 
 $students = $conn->prepare("SELECT * FROM students");
 $students->execute();
@@ -14,6 +15,7 @@ echo "<td style='font-weight:bold';>Student Name</td>";
 echo "<td style='font-weight:bold';>Student Course</td>";
 echo "<td style='font-weight:bold';>Student Batch</td>";
 echo "<td style='font-weight:bold';>Student City</td>";
+echo "<td style='font-weight:bold';>Delete</td>";
 echo " </tr>";
 foreach($result as $student){
     echo "<tr>". 
@@ -22,7 +24,7 @@ foreach($result as $student){
         "<td>".$student['Batch']."</td>".
         "<td>".$student['City']."</td>".
         "<td>"."<form method='post'>".
-        "<button name='delete' value=".$student['id'].">Delete</button>".
+        "<button name='delete' value=".$student['id']." class='btn btn-outline-danger'>Delete</button>".
         "</form>"."</td>".
     "</tr>";
 }
