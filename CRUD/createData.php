@@ -31,13 +31,13 @@ include 'config.php';
              <label for="course" class="form-label">Course:</label>
              <span required>
              <div class="form-check">
-                <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="course">
+                <input class="form-check-input" type="radio" value="ADSE" id="flexCheckDefault" name="course">
                 <label class="form-check-label" for="flexCheckDefault">
                     ADSE
                 </label>
              </div>
             <div class="form-check">
-                  <input class="form-check-input" type="radio" value="" id="flexCheckChecked" name="course">
+                  <input class="form-check-input" type="radio" value="HDSE" id="flexCheckChecked" name="course">
                   <label class="form-check-label" for="flexCheckChecked">
                     HDSE
                   </label>
@@ -80,9 +80,10 @@ if($_POST){
     $year = $_POST['year'];
 
     $sql = "INSERT INTO students (name, course, batch, city, year) VALUES ('$name', '$course', '$batch', '$city', '$year')";
-    $conn->exec($sql);
+    // $conn->exec($sql);
 
     if($conn->exec($sql)){
+      header("Location: index.php");
         echo "Data Inserted Successfully";
     }else{
         echo "Data Insertion Failed";

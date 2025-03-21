@@ -36,9 +36,6 @@ include 'config.php';
   <div class="container-fluid">
     <h1 align="center">CRUD</h1>
     <button class="btn btn-success"><a href="./createData.php">Create User</a></button>
-    <form action="" method="post">
-    
-    </form>
   </div>
 </body>
 </html>
@@ -67,8 +64,15 @@ echo "<table border='1' class='table table-success table-striped mt-4' style='ma
          <td>{$student['Batch']}</td>
          <td>{$student['City']}</td>
          <td>{$student['Year']}</td>
-         <td> <button class='btn btn-primary'>Edit </button> </td>
-         <td> <button class='btn btn-danger'>Delete</button> </td>
+
+         <form method='post' action='./editData.php'>
+         <input type='hidden' name='id' value='{$student["id"]}'>
+         <td> <button class='btn btn-primary' type='submit'>Edit </button> </td>
+         </form>
+
+         <form methos='post' action='./deleteData.php' onsubmit='return confirm(\"Are you sure you want to delete this record?\")'>
+         <td> <button type='submit' class='btn btn-danger'>Delete</button> </td>
+         </form>
          ";
          $count++;
       }
