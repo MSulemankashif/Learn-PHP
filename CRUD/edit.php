@@ -47,11 +47,20 @@ $result = $stmt->fetch();
         <label for="batch">Batch :</label>
         <input type="text" name="batch" value="<?php echo $result['batch']; ?>" required>
         <br>
-        <label for="city">Year :</label>
-
+        <label for="city">City :</label>
+        <select name="city" class="form-select" required>
+                <option>Select Your City</option>
+                <option value="karachi" <?php if($result['city']== "karachi") echo "selected"?>>Karachi</option>
+                <option value="lahore" <?php if($result['city']== "lahore") echo "selected"?>>Lahore</option>
+                <option value="islamabad" <?php if($result['city']== "islamabad") echo "selected"?>>Islamabad</option>
+                <option value="multan" <?php if($result['city']== "multan") echo "selected"?>>Multan</option>
+                <option value="faisalabad" <?php if($result['city']== "faisalabad") echo "selected"?>>Faisalabad</option>
+                <option value="hyderabad" <?php if($result['city']== "hyderabad") echo "selected"?>>Hyderabad</option>
+                <option value="peshawar" <?php if($result['city']== "peshawar") echo "selected"?>>Peshawar</option>
+             </select>
         <br>
-        <label for="year">Batch :</label>
-        <input type="text" name="year" value="<?php echo $result['batch']; ?>" required>
+        <label for="year">Year :</label>
+        <input type="text" name="year" value="<?php echo $result['year']; ?>" required>
         <br>
     </form>
 </head>

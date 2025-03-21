@@ -64,13 +64,14 @@ echo "<table border='1' class='table table-success table-striped mt-4' style='ma
          <td>{$student['Batch']}</td>
          <td>{$student['City']}</td>
          <td>{$student['Year']}</td>
+        <td> 
+          <form method='post' action='editData.php'>
+            <input type='hidden' name='id' value='{$student["id"]}'>
+            <a href='edit.php?id={$student['id']}' class='btn btn-primary'>Edit</a>
+          </form>
+        </td>
 
-         <form method='post' action='./editData.php'>
-         <input type='hidden' name='id' value='{$student["id"]}'>
-         <td> <button class='btn btn-primary' type='submit'>Edit </button> </td>
-         </form>
-
-         <form methos='post' action='./deleteData.php' onsubmit='return confirm(\"Are you sure you want to delete this record?\")'>
+         <form method='post' action='deleteData.php' onsubmit='return confirm(\"Are you sure you want to delete this record?\")'>
          <td> <button type='submit' class='btn btn-danger'>Delete</button> </td>
          </form>
          ";
