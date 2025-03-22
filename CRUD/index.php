@@ -65,7 +65,7 @@ echo "<table border='1' class='table table-success table-striped mt-4' style='ma
          <td>{$student['City']}</td>
          <td>{$student['Year']}</td>
         <td> 
-          <form method='post' action='editData.php'>
+          <form method='get' action='editData.php'>
             <input type='hidden' name='id' value='{$student["id"]}'>
             <a href='edit.php?id={$student['id']}' class='btn btn-primary'>Edit</a>
           </form>

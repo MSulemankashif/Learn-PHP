@@ -50,13 +50,13 @@ include 'config.php';
              <label for="city" class="form-label">City:</label>
              <select name="city" class="form-select" required>
                 <option>Select Your City</option>
-                <option value="karachi">Karachi</option>
-                <option value="lahore">Lahore</option>
-                <option value="islamabad">Islamabad</option>
-                <option value="multan">Multan</option>
-                <option value="faisalabad">Faisalabad</option>
-                <option value="hyderabad">Hyderabad</option>
-                <option value="peshawar">Peshawar</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Lslamabad">Islamabad</option>
+                <option value="Multan">Multan</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Peshawar">Peshawar</option>
              </select>
              <br>
              <label for="year" class="form-label">Year:</label>
