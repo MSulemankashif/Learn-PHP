@@ -71,8 +71,8 @@ echo "<table border='1' class='table table-success table-striped mt-4' style='ma
           </form>
         </td>
 
-         <form method='post' action='deleteData.php' onsubmit='return confirm(\"Are you sure you want to delete this record?\")'>
-         <td> <button type='submit' class='btn btn-danger'>Delete</button> </td>
+         <form method='post' action='deleteData.php'>
+         <td> <a href='deleteData.php?id={$student['id']}' class='btn btn-danger'>Delete</a> </td>
          </form>
          ";
          $count++;
