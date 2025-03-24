@@ -1,0 +1,7 @@
+table{
+    /* width: 85% !important; */
+    border: 1px solid black !important;
+}
+input[type="text"]{
+    width: 50% !important;
+}

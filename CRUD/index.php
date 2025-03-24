@@ -35,7 +35,7 @@ include 'config.php';
 <body>
   <div class="container-fluid">
     <h1 align="center">CRUD</h1>
-    <button class="btn btn-success"><a href="./createData.php">Create User</a></button>
+    <a href="./createData.php" class="btn btn-success">Create User</a>
   </div>
 </body>
 </html>
