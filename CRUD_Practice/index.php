@@ -58,7 +58,7 @@ foreach($result as $student){
             <td>'.$student["City"].'</td>
             <td>'.$student["Year"].'</td>
             <td><form method="post" action="editData.php">
-                <button class="btn btn-outline-primary">Edit</button>
+            <a class="btn btn-primary" href="">Edit</a>
             </form>
             </td>
             <td><form method="post" action="editData.php">

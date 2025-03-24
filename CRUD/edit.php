@@ -2,23 +2,12 @@
 include_once 'config.php';
 
 $id = $_GET['id'];
-// $name = $_GET['name'];
-// $course = $_GET['course'];
-// $batch = $_GET['batch'];
-// $city = $_GET['city'];
-// $year = $_GET['year'];
 
 $query = 'SELECT * FROM students WHERE id ='. $id;
 $stmt = $conn->prepare($query);
 $stmt->execute();
 $result = $stmt->fetch();
 
-// if($result){
-//     // echo "Record Found";
-//     print_r($result);
-// }else{
-//     echo "Record Not Found";
-// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
