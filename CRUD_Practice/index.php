@@ -39,6 +39,7 @@
 echo "<div class='container-fluid'>";
 echo '<table border="1" class="table table-striped">
         <tr>
+            <th>S.No</th>
             <th>Name</th>
             <th>Course</th>
             <th>Batch</th>
@@ -47,9 +48,10 @@ echo '<table border="1" class="table table-striped">
             <th>Edit</th>
             <th>Delete</th>
         </tr>';
-
+$count = 1;
 foreach($result as $student){
     echo '<tr>
+            <td>'.$count.'</td>
             <td>'.$student["Name"].'</td>
             <td>'.$student["Course"].'</td>
             <td>'.$student["Batch"].'</td>
@@ -64,6 +66,7 @@ foreach($result as $student){
             </form>
             </td>
         </tr>';
+        $count++;
     }
 
     '</table> </div>';
