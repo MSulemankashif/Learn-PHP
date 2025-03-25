@@ -41,13 +41,13 @@ $result = $stmt->fetch();
             <br>
             <label for="course">Course :</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio"  value="ADSE" name="course" <?php if($result['Course'] == 'ADSE') echo 'checked'?>>
+              <input class="form-check-input" type="radio"  value="ADSE" name="Course" <?php if($result['Course'] == 'ADSE') echo 'checked'?>>
               <label class="form-check-label" for="flexRadioDefault1">
                 ADSE
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" value="HDSE" name="course" <?php if($result['Course'] == 'ADSE') echo 'checked'?>>
+              <input class="form-check-input" type="radio" value="HDSE" name="Course" <?php if($result['Course'] == 'HDSE') echo 'checked'?>>
               <label class="form-check-label" for="flexRadioDefault2">
                 HDSE
               </label>

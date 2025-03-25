@@ -3,12 +3,12 @@ include 'config.php';
 
 $id = $_POST['id'];
 $name = $_POST['name'];
-$course = $_POST['course'];
+$course = $_POST['Course'];
 $batch = $_POST['batch'];
-$city = $_POST['city'];
+$city = $_POST['City'];
 $year = $_POST['year'];
 
-$query = "UPDATE students SET name = '$name', course = '$course', batch = '$batch', city = '$city', year = '$year' WHERE id = $id";
+$query = "UPDATE students SET name = '$name', Course = '$course', batch = '$batch', city = '$city', year = '$year' WHERE id = $id";
 $stmt = $conn->prepare($query);
 $stmt->execute();
 
