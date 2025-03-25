@@ -50,22 +50,24 @@ echo '<table border="1" class="table table-striped">
         </tr>';
 $count = 1;
 foreach($result as $student){
-    echo '<tr>
-            <td>'.$count.'</td>
-            <td>'.$student["Name"].'</td>
-            <td>'.$student["Course"].'</td>
-            <td>'.$student["Batch"].'</td>
-            <td>'.$student["City"].'</td>
-            <td>'.$student["Year"].'</td>
-            <td><form method="post" action="editData.php">
-            <a class="btn btn-primary" href="">Edit</a>
+    echo "<tr>
+            <td>$count</td>
+            <td>{$student['Name']}</td>
+            <td>{$student['Course']}</td>
+            <td>{$student['Batch']}</td>
+            <td>{$student['City']}</td>
+            <td>{$student['Year']}</td>
+
+            <form action='editData.php' method='post'>
+                <input type='hidden' value='{$student['id']}' name='id'>
+                <td> <a href='edit.php?id={$student['id']}' class='btn btn-primary'>Edit</a> </td>
             </form>
-            </td>
-            <td><form method="post" action="editData.php">
-                <button class="btn btn-danger">Delete</button>
+
+            <form action='deleteData.php' method='post'>
+                <input type='hidden' value='{$student['id']}' name='id'>
+                <td> <a href='deleteData.php?id={$student['id']}' class='btn btn-danger' onclick='return confirm('Are You sure you want to delete this record')';>Delete</a> </td>
             </form>
-            </td>
-        </tr>';
+        </tr>";
         $count++;
     }
 

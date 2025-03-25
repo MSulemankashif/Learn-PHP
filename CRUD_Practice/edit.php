@@ -19,7 +19,7 @@ $result = $stmt->fetch();
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
 <title>Edit</title>
 </head>
 <body>
@@ -35,6 +35,7 @@ $result = $stmt->fetch();
         </nav>
     </header>
         <form action="editData.php" method="post">
+          <input type="hidden" name="id" value="<?php echo $result['id']?>">
             <label for="name">Name :</label>
             <input type="text" name="name" placeholder="Enter your Name here" class="form-control" required value="<?php echo $result['Name']?>">
             <br>
@@ -55,8 +56,8 @@ $result = $stmt->fetch();
             <label for="batch">Batch :</label>
             <input type="text" name="batch" placeholder="Enter your Batch here" class="form-control" required value="<?php echo $result['Batch']?>">
             <br>
-            <label for="city">City :</label>
-            <select name="city" class="form-select" required>
+            <label for="City">City :</label>
+            <select name="City" class="form-select" required>
                 <option>Select City</option>
                 <option value="Karachi" <?php if($result['City'] == 'Karachi') echo "selected"?>>Karachi</option>
                 <option value="Lahore" <?php if($result['City'] == 'Lahore') echo "selected"?>>Lahore</option>

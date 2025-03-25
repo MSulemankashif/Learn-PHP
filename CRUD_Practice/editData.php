@@ -5,13 +5,14 @@ $id = $_POST['id'];
 $name = $_POST['name'];
 $course = $_POST['course'];
 $batch = $_POST['batch'];
-$city = $_POST['City'];
+$city = $_POST['city'];
 $year = $_POST['year'];
 
 $query = "UPDATE students SET name = '$name', course = '$course', batch = '$batch', city = '$city', year = '$year' WHERE id = $id";
-$conn->exec($query);
+$stmt = $conn->prepare($query);
+$stmt->execute();
 
-if($conn){
+if($stmt){
     header('Location: ./index.php');
     exit();
 }else{
