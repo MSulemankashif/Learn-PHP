@@ -28,7 +28,7 @@ include 'config.php';
 <body>
     <div class="container">
         <form action="search.php" method="post" class="form-inline">
-            <input type="text" name="search" placeholder="Search here..." class="form-control m-4">
+            <input type="search" name="search" placeholder="Search here..." class="form-control m-4">
             <button class="btn btn-primary">Search</button>
         </form>
     </div>
