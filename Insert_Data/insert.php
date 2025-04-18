@@ -7,8 +7,14 @@ if(isset($_POST["submit"])){
     $city = $_POST['city'];
     $year = $_POST['year'];
     try{
-        $sql = "INSERT INTO students (Name, Course, Batch, City, `Year`) VALUES ('$name','$course','$batch','$city','$year')";
-        $conn->exec($sql);
+        // With Exec
+        // $sql = "INSERT INTO students (Name, Course, Batch, City, `Year`) VALUES ('$name','$course','$batch','$city','$year')";
+        // $conn->exec($sql);
+
+        // With Execute
+        $sql = "INSERT into students (Name, Course, Batch, City, Year) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$name, $course, $batch, $city, $year]);
         echo "Data Inserted Successfully";
     }catch(PdoException $e){
         echo "Data Insertion Failed: " . $e->getMessage();
