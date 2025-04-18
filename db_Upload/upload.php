@@ -15,9 +15,9 @@ if(isset($_POST['submit'])) {
         $stmt->execute([$name, $age, $city, $file_path]);
         if($stmt) {
             move_uploaded_file($temp_file, $path . $file);
-            echo "File uploaded successfully";
+            header("Location: index.php?success=1");
         } else {
-            echo "Failed to upload file";
+            header("Location:index.php?error=1");
         }
     }catch(PDOException $e){
         echo "Error: " . $e->getMessage();

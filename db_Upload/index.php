@@ -27,6 +27,15 @@
         </div>
     </form>
 
+    <?php
+        if(isset($_GET['success'])){
+            echo "<script>alert('Record Inserted Successfully')</script>";
+        }else if (isset($_GET['error'])){
+            echo "<script>alert('Record Insertion failed')</script>";
+        }
+    ?>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
