@@ -1,17 +1,15 @@
 <?php
+/* for($i=0; $i<=10;$i++){
+    // echo "hello World";
+    echo $i;
+} */
 
-// if($_GET){
-//     echo "Your name is ". $_GET['username'];
-//     echo "<br>";
-//     echo "Your password is ". $_GET['password'];
-// } else if($_POST){
-//     echo "Your name is " .$_POST['username'];
-//     echo "<br>";
-//     echo "Your password is " .$_POST['password'];
-// }
-// else{
-//     echo "hello world";
-// };
+// Implode example
+$arr = ['Suleman', 'is', 'a', 'developer'];
+$string = implode(" ", $arr);
+echo $string;
 
-
-print_r( $_POST); 
+// Explode example
+// $text = "Suleman,is,a,developer";
+// $array = explode(",", $text);
+// print_r($array);
