@@ -20,5 +20,14 @@ $users = ["Suleman", "Ali", "Ahmed", "Usman", "Bilal", "Osama"];
 
 // unset($users[0]);
 array_push($users, "hassan");
+// array_pop($users);
+// print_r($users);
+
+
+array_push($users, "Hussain", "Bilal", "Waseem");
 array_pop($users);
-print_r($users);
+$count = 0;
+foreach($users as $data){
+    $count++;
+    echo $count . " ". $data . "</br>";
+}
