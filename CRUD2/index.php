@@ -15,5 +15,11 @@ include 'config.php';
 </body>
 </html>
 <?php
-$stmt = $conn->prepare('SELECT * FROM Users');
+   $stmt = $conn->prepare("SELECT * FROM students");
+   $stmt->execute();
+   $result = $stmt->fetchAll();
+
+//    print_r($result);
+
+
 ?>
